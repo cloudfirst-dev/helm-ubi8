@@ -18,4 +18,4 @@ USER 1001
 
 WORKDIR /tmp
 
-ENTRYPOINT entry-point.sh @
+ENTRYPOINT entry-point.sh $@
