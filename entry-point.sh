@@ -1,8 +1,8 @@
 #!/bin/sh
   
-if helm status $1
+if helm status -n $2 $1
 then
-  helm upgrade $1 $1
+  helm upgrade -n $2 $1 $1
 else
-  helm install $1 $1
+  helm install -n $2 $1 $1
 fi
